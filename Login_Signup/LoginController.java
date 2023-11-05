@@ -55,31 +55,30 @@ public class LoginController{
         String username1 = usernameField.getText();
         String password1 = passwordField.getText();
 
-        if (username1.isEmpty() || password1.isEmpty() ) {
-
-            AlertMaker.showErrorAlert("Log in", "Fill out the important fields"); 
-        }
-
-        else if (username == null || password == null) {
-
+        if (username1.isEmpty() || password1.isEmpty()) {
+            AlertMaker.showErrorAlert("Log in", "Fill out the important fields");
+        } 
+        else if (UserCredentials.credentials.isEmpty()) {
             AlertMaker.showErrorAlert("Log in", "Account doesn't exist");
-        }
-
-        else if (username.equals(username1) && password.equals(password1)) {
-
-            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Home/Home.fxml"));
-            Parent root = loader.load();
-            Scene scene = new Scene(root);
-            stage.setScene(scene);
-            stage.centerOnScreen();
-            stage.show();
-    
-        }
-
+        } 
         else {
+            String storedPassword = UserCredentials.credentials.get(username1);
+            if (storedPassword != null && storedPassword.equals(password1)) {
 
-            AlertMaker.showErrorAlert("Login Error", "Username/Password is wrong");
+                Stage homeStage = new Stage();
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/Home/Home.fxml"));
+                Parent root = loader.load();
+                Scene scene = new Scene(root);
+                homeStage.setScene(scene);
+                homeStage.centerOnScreen();
+                homeStage.show();
+                
+                Stage loginStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                loginStage.close();
+            } 
+            else {
+                AlertMaker.showErrorAlert("Login Error", "Username/Password is wrong");
+            }
         }
        
     }

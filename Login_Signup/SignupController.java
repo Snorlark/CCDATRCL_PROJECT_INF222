@@ -62,8 +62,7 @@ public class SignupController{
         
         else {
 
-            LoginController.username = username; 
-            LoginController.password = password;
+            UserCredentials.credentials.put(username, password);
         
             AlertMaker.showSuccessfulAlert("Sign Up", "Register your important details");
         
