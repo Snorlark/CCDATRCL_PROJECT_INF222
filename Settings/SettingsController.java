@@ -191,7 +191,7 @@ public class SettingsController implements Initializable{
     public void showAbout(MouseEvent event) throws IOException { 
          AlertMaker.showAboutAlert("About us", 
          
-         "GROUP 5 - FILODROIDS \nAgustin, Sherlene \nAngeles, Jason \nBabao, Lark \nValdez, Angelique");
+         "DANNY DANNY - FILODROIDS \nAgustin, Sherlene \nAngeles, Jason \nBabao, Lark \nValdez, Angelique");
 
     }
 
