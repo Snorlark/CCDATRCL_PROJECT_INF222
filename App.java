@@ -21,7 +21,7 @@ public class App extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
         
-        Image icon = new Image("filodroids.png");
+        Image icon = new Image(getClass().getResource("filodroids.png").toExternalForm());
         primaryStage.getIcons().add(icon);
         primaryStage.setResizable(false);
         primaryStage.setTitle("FILODROIDS");
