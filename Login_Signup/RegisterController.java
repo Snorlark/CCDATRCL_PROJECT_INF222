@@ -84,11 +84,8 @@ public class RegisterController implements Initializable{
 
         if (firstName.isEmpty() || lastName.isEmpty() || email.isEmpty() || contactNo.isEmpty() 
             || birthday == null || address.isEmpty() || checkBoxField.isSelected() == false) {
-
-                AlertMaker.showErrorAlert("Register", "Fill out the important fields");
-        }
-
-        else {
+                AlertMaker.showErrorAlert("Register", "Please fill out all fields, and remember to read and agree to the Terms & Conditions and Privacy Policy!");
+        } else {
             
         AlertMaker.showSuccessfulAlert("Register", "Your account is now created, you can log in now!");
         

@@ -56,10 +56,10 @@ public class LoginController{
         String password1 = passwordField.getText();
 
         if (username1.isEmpty() || password1.isEmpty()) {
-            AlertMaker.showErrorAlert("Log in", "Fill out the important fields");
+            AlertMaker.showErrorAlert("Log in", "Please fill out both username and password fields!");
         } 
         else if (UserCredentials.credentials.isEmpty()) {
-            AlertMaker.showErrorAlert("Log in", "Account doesn't exist");
+            AlertMaker.showErrorAlert("Log in", "Account does not exist. ");
         } 
         else {
             String storedPassword = UserCredentials.credentials.get(username1);

@@ -55,16 +55,17 @@ public class SignupController{
         username = usernameField.getText();
         password = passwordField.getText();
         
+        
         if (username.isEmpty() || password.isEmpty()) {
 
-            AlertMaker.showErrorAlert("Sign Up", "Fill out the important fields");    
+            AlertMaker.showErrorAlert("Sign Up", "Please fill out both username and password fields!");    
         }
         
         else {
 
             UserCredentials.credentials.put(username, password);
         
-            AlertMaker.showSuccessfulAlert("Sign Up", "Register your important details");
+            AlertMaker.showSuccessfulAlert("Sign Up", "Let's get you signed up!");
         
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/Login_Signup/Register.fxml"));
