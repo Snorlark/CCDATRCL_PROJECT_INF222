@@ -259,7 +259,7 @@ public class ProductViewController implements Initializable {
 
    public void showAbout(ActionEvent event) throws IOException { 
         AlertMaker.showAboutAlert("About us",
-        "DANNY DANNY - FILODROIDS \nAgustin, Sherlene \nAngeles, Jason \nBabao, Lark \nValdez, Angelique");
+        "GROUP 5 - FILODROIDS \nAgustin, Sherlene \nAngeles, Jason \nBabao, Lark \nValdez, Angelique");
 
    }
     

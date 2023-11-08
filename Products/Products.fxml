@@ -115,21 +115,66 @@
             <Font name="Candara Bold Italic" size="14.0" />
          </font>
       </Label>
-      <Button fx:id="p1" layoutX="148.0" layoutY="337.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button" />
-      <Button fx:id="p2" layoutX="345.0" layoutY="337.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button" />
-      <Button fx:id="p3" layoutX="542.0" layoutY="337.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button" />
-      <Button fx:id="p6" layoutX="149.0" layoutY="563.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button" />
-      <Button fx:id="p7" layoutX="345.0" layoutY="563.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button" />
-      <Button fx:id="p4" layoutX="738.0" layoutY="337.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button" />
-      <Button fx:id="p9" layoutX="739.0" layoutY="563.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button" />
-      <Button fx:id="p8" layoutX="542.0" layoutY="563.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button" />
-      <Button fx:id="checkout" layoutX="874.0" layoutY="561.0" mnemonicParsing="false" onAction="#gotoCart" opacity="0.0" prefHeight="40.0" prefWidth="166.0" text="Button" />
-      <Button fx:id="p5" layoutX="936.0" layoutY="337.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button" />
-      <Button fx:id="userprofile" layoutX="1069.0" layoutY="70.0" mnemonicParsing="false" onAction="#gotoUserprofile" opacity="0.0" prefHeight="34.0" prefWidth="33.0" text="Button" />
-      <Button layoutX="1068.0" layoutY="168.0" mnemonicParsing="false" onAction="#showInstruct" opacity="0.0" prefHeight="26.0" prefWidth="34.0" text="Button" />
-      <Button layoutX="1068.0" layoutY="116.0" mnemonicParsing="false" onAction="#gotoCart" opacity="0.0" prefHeight="34.0" prefWidth="34.0" text="Button" />
-      <Button layoutX="1068.0" layoutY="546.0" mnemonicParsing="false" onAction="#showAbout" opacity="0.0" prefHeight="34.0" prefWidth="34.0" text="Button" />
-      <Button fx:id="back" layoutX="47.0" layoutY="69.0" mnemonicParsing="false" onAction="#gotoHome" opacity="0.0" prefHeight="34.0" prefWidth="34.0" text="Button" />
+      <Button fx:id="p1" layoutX="148.0" layoutY="337.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="p2" layoutX="345.0" layoutY="337.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="p3" layoutX="542.0" layoutY="337.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="p6" layoutX="149.0" layoutY="563.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="p7" layoutX="345.0" layoutY="563.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="p4" layoutX="738.0" layoutY="337.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="p9" layoutX="739.0" layoutY="563.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="p8" layoutX="542.0" layoutY="563.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="checkout" layoutX="874.0" layoutY="561.0" mnemonicParsing="false" onAction="#gotoCart" opacity="0.0" prefHeight="40.0" prefWidth="166.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="p5" layoutX="936.0" layoutY="337.0" mnemonicParsing="false" onAction="#buy" opacity="0.0" prefHeight="26.0" prefWidth="66.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="userprofile" layoutX="1069.0" layoutY="70.0" mnemonicParsing="false" onAction="#gotoUserprofile" opacity="0.0" prefHeight="34.0" prefWidth="33.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="1068.0" layoutY="168.0" mnemonicParsing="false" onAction="#showInstruct" opacity="0.0" prefHeight="26.0" prefWidth="34.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="1068.0" layoutY="116.0" mnemonicParsing="false" onAction="#gotoCart" opacity="0.0" prefHeight="34.0" prefWidth="34.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="1068.0" layoutY="546.0" mnemonicParsing="false" onAction="#showAbout" opacity="0.0" prefHeight="34.0" prefWidth="34.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="back" layoutX="47.0" layoutY="69.0" mnemonicParsing="false" onAction="#gotoHome" opacity="0.0" prefHeight="34.0" prefWidth="34.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
       <ImageView fx:id="img1" fitHeight="122.0" fitWidth="74.0" layoutX="108.0" layoutY="182.0">
          <image>
             <Image url="@images/p1.png" />
@@ -170,19 +215,241 @@
             <Image url="@images/p8.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="img9" fitHeight="122.0" fitWidth="74.0" layoutX="702.0" layoutY="409.0">
+      <ImageView fx:id="backAModel" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
          <image>
-            <Image url="@images/p9.png" />
+            <Image url="@images/custom/outfit/backA.png" />
          </image>
       </ImageView>
-      <Button fx:id="v1" layoutX="74.0" layoutY="182.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
-      <Button fx:id="v2" layoutX="270.0" layoutY="182.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
-      <Button fx:id="v3" layoutX="467.0" layoutY="182.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
-      <Button fx:id="v4" layoutX="665.0" layoutY="182.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
-      <Button fx:id="v5" layoutX="861.0" layoutY="182.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
-      <Button fx:id="v9" layoutX="664.0" layoutY="409.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
-      <Button fx:id="v8" layoutX="468.0" layoutY="408.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
-      <Button fx:id="v7" layoutX="272.0" layoutY="411.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
-      <Button fx:id="v6" layoutX="74.0" layoutY="408.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button" />
+      <ImageView fx:id="backBModel" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/outfit/backB.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="skin1Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="399.0">
+         <image>
+            <Image url="@images/custom/skin/skin1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="skin2Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/skin/skin2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="skin3Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/skin/skin3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="skin4Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/skin/skin4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="eyebrows1Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/eyebrows/brow1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="eyebrows2Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/eyebrows/brow2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="eyebrows3Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/eyebrows/brow3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="eyebrows4Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/eyebrows/brow4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="eyebrows5Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/eyebrows/brow5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="eyebrows6Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/eyebrows/brow6.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="eyebrows7Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/eyebrows/brow7.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="eyebrows8Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/eyebrows/brow8.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hair1Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/hair/hair1a.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hair2Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/hair/hair1b.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hair3Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/hair/hair2a.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hair4Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/hair/hair2b.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="eyes1Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/eyes/eye1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="eyes2Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/eyes/eye2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="eyes3Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/eyes/eye3a.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="eyes4Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/eyes/eye3b.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="eyes5Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/eyes/eye4a.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="eyes6Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/eyes/eye4b.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="eyes7Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/eyes/eye5a.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="eyes9Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/eyes/eye5b.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mouth1Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/mouth/mouth1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mouth2Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/mouth/mouth2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mouth3Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/mouth/mouth3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mouth4Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/mouth/mouth4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mouth5Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/mouth/mouth5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mouth6Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/mouth/mouth6.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="outfit1Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/outfit/outfit1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="outfit2Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/outfit/outfit2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="outfit3Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/outfit/outfit3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="outfit4Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/outfit/outfit4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="outfit5Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/outfit/outfit5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="outfit6Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/outfit/outfit6.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="outfit7Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/outfit/outfit7.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="outfit8Model" fitHeight="133.0" fitWidth="84.0" layoutX="693.0" layoutY="652.0">
+         <image>
+            <Image url="@images/custom/outfit/outfit8.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="v1" layoutX="74.0" layoutY="182.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="v2" layoutX="270.0" layoutY="182.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="v3" layoutX="467.0" layoutY="182.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="v4" layoutX="665.0" layoutY="182.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="v5" layoutX="861.0" layoutY="182.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="v9" layoutX="664.0" layoutY="409.0" mnemonicParsing="false" onAction="#gotoCustomize" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="v8" layoutX="468.0" layoutY="408.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="v7" layoutX="272.0" layoutY="411.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="v6" layoutX="74.0" layoutY="408.0" mnemonicParsing="false" onAction="#view" opacity="0.0" prefHeight="143.0" prefWidth="146.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
    </children>
 </AnchorPane>
