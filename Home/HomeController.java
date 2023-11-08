@@ -4,8 +4,8 @@ import java.io.IOException;
 
 import Alert.AlertMaker;
 import Products.CartController;
+import Products.CustomizeController;
 import Products.ProductController;
-import Products.ProductViewController;
 import Settings.SettingsController;
 import Products.model.Cart;
 import Products.model.p1;
@@ -87,6 +87,7 @@ public class HomeController implements Initializable {
     public static p9 product9 = new p9();
     public static Cart cart = new Cart();
 
+    public CustomizeController customControl = new CustomizeController();
     
 
     @Override
@@ -166,13 +167,10 @@ public class HomeController implements Initializable {
         product8.setProductImage("/Products/images/p8.png");
 
         // ============== ITEM 9 ==================//
-        product9.setProductName("Tian");
-        product9.setProductPrice(200.00);
-        product9.setProductImage("/Products/images/p9.png");
+        product9.setProductPrice(400.00);
+        product9.setProductImage("/Products/images/custom/skin/skin1.png");
 
         CartController.cartGoBackCount = 1;
-
-    
         
     }   
     
@@ -191,12 +189,26 @@ public class HomeController implements Initializable {
 
     }
 
+    // Goes to Customize.fxml
+    public void gotoCustomize(ActionEvent event) throws IOException {
+
+        SettingsController.settingsGoBackCount = 1;
+
+        Parent root = FXMLLoader.load(getClass().getResource("/Products/Customize.fxml"));
+        Scene scene = new Scene(root);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+
+        ProductController.count = 1;
+        
+    }
+
     // Goes to Userprofile.fxml
     public void gotoUserprofile(ActionEvent event) throws IOException {
         
         SettingsController.settingsGoBackCount = 1;
         
-
         Parent root = FXMLLoader.load(getClass().getResource("/Settings/Settings.fxml"));
         Scene scene = new Scene(root);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -211,7 +223,7 @@ public class HomeController implements Initializable {
 
         ImageView viewButton = (ImageView) event.getSource();
         CartController.cartGoBackCount = 2;
-
+        SettingsController.settingsGoBackCount = 2;
 
          if (viewButton.equals(img1)) {
             
@@ -268,14 +280,10 @@ public class HomeController implements Initializable {
    
        public void showAbout(ActionEvent event) throws IOException { 
             AlertMaker.showAboutAlert("About us",
-            "DANNY DANNY - FILODROIDS \nAgustin, Sherlene \nAngeles, Jason \nBabao, Lark \nValdez, Angelique");
+            "GROUP 5 - FILODROIDS \nAgustin, Sherlene \nAngeles, Jason \nBabao, Lark \nValdez, Angelique");
    
        }
    
 
-
-    //     // LoginController.cart.showItems();
-    // }
-
-
 }
+

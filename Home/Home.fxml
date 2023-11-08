@@ -10,11 +10,6 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="1147.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home.HomeController">
    <children>
-      <Label layoutX="230.0" layoutY="169.0" text="HOME">
-         <font>
-            <Font name="Candara" size="51.0" />
-         </font></Label>
-      <Button fx:id="selectionpage" layoutX="363.0" layoutY="314.0" mnemonicParsing="false" opacity="0.01" prefHeight="55.0" prefWidth="186.0" text="bttn" />
       <ImageView fitHeight="643.0" fitWidth="1147.0">
          <image>
             <Image url="@images/homepage.png" />
@@ -72,7 +67,7 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="p5" layoutX="815.0" layoutY="439.0" mnemonicParsing="false" onAction="#gotoProductselect" opacity="0.0" prefHeight="34.0" prefWidth="98.0" text="Button">
+      <Button fx:id="p5" layoutX="815.0" layoutY="429.0" mnemonicParsing="false" onAction="#gotoProductselect" opacity="0.0" prefHeight="34.0" prefWidth="98.0" text="Button">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
@@ -138,5 +133,10 @@
             <Font name="Candara Bold Italic" size="14.0" />
          </font>
       </Label>
+      <Button layoutX="36.0" layoutY="151.0" mnemonicParsing="false" onAction="#gotoCustomize" opacity="0.0" prefHeight="232.0" prefWidth="621.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
    </children>
 </AnchorPane>
