@@ -5,10 +5,8 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import Alert.AlertMaker;
-import Home.HomeController;
 import Login_Signup.RegisterController;
 import Login_Signup.SignupController;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -164,6 +162,16 @@ public class SettingsController implements Initializable{
             stage.show();
         }
 
+        else if (SettingsController.settingsGoBackCount == 4) {
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Products/Customize.fxml"));
+            Parent root = loader.load();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.centerOnScreen();
+            stage.show();
+        }
+
     }
 
     public void gotoCart(MouseEvent event) throws IOException {
@@ -191,7 +199,7 @@ public class SettingsController implements Initializable{
     public void showAbout(MouseEvent event) throws IOException { 
          AlertMaker.showAboutAlert("About us", 
          
-         "DANNY DANNY - FILODROIDS \nAgustin, Sherlene \nAngeles, Jason \nBabao, Lark \nValdez, Angelique");
+         "GROUP 5 - FILODROIDS \nAgustin, Sherlene \nAngeles, Jason \nBabao, Lark \nValdez, Angelique");
 
     }
 
