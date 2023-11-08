@@ -193,6 +193,7 @@ public class HomeController implements Initializable {
     public void gotoCustomize(ActionEvent event) throws IOException {
 
         SettingsController.settingsGoBackCount = 1;
+        CustomizeController.customizeGoBackCount = 1;
 
         Parent root = FXMLLoader.load(getClass().getResource("/Products/Customize.fxml"));
         Scene scene = new Scene(root);
