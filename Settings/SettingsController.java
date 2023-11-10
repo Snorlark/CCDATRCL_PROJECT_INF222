@@ -5,10 +5,8 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import Alert.AlertMaker;
-import Home.HomeController;
 import Login_Signup.RegisterController;
 import Login_Signup.SignupController;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -157,6 +155,16 @@ public class SettingsController implements Initializable{
         else if (SettingsController.settingsGoBackCount == 3) {
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/Products/Cart.fxml"));
+            Parent root = loader.load();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.centerOnScreen();
+            stage.show();
+        }
+
+        else if (SettingsController.settingsGoBackCount == 4) {
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Products/Customize.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
             stage.setScene(scene);

@@ -18,7 +18,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
-import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
@@ -177,7 +176,7 @@ public class CartController implements Initializable {
         Image image8 = new Image(HomeController.product8.getProductImage());
         img8.setImage(image8);
 
-        item9.setText(HomeController.product9.getProductName());
+        item9.setText("Custom (" + CustomizeController.product9.getProductName() + ")");
         price9.setText("₱ " + Double.toString(HomeController.product9.getProductPrice()));
         Image image9 = new Image(HomeController.product9.getProductImage());
         img9.setImage(image9);
@@ -218,12 +217,10 @@ public class CartController implements Initializable {
             homeRoot = loader.load();
 
         } catch (Exception e) {
-            // TODO: handle exception
+
             e.printStackTrace();
 
         }
-
-        // Clears all items in Checkout.fxml
       
      }
 
