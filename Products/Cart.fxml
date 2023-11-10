@@ -21,7 +21,7 @@
             <Image url="@images/cart%20view.png" />
          </image>
       </ImageView>
-      <ScrollPane layoutX="91.0" layoutY="206.0" pannable="true" prefHeight="328.0" prefWidth="935.0" style="-fx-background-color: #f3e4d9;">
+      <ScrollPane layoutX="91.0" layoutY="177.0" pannable="true" prefHeight="356.0" prefWidth="936.0" style="-fx-background-color: #f3e4d9;">
          <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="926.0" prefWidth="918.0" style="-fx-background-color: #f3e4d9;">
                <children>
@@ -353,12 +353,7 @@
             <Font name="Candara Bold" size="24.0" />
          </font>
       </Label>
-      <Button layoutX="45.0" layoutY="67.0" mnemonicParsing="false" onAction="#goBack" opacity="0.0" prefHeight="39.0" prefWidth="36.0" text="Button">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-      <Button layoutX="1067.0" layoutY="126.0" mnemonicParsing="false" onAction="#showInstruct" opacity="0.0" prefHeight="30.0" prefWidth="37.0" text="Button">
+      <Button layoutX="1064.0" layoutY="67.0" mnemonicParsing="false" onAction="#showInstruct" opacity="0.0" prefHeight="30.0" prefWidth="37.0" text="Button">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -368,15 +363,10 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="1066.0" layoutY="177.0" mnemonicParsing="false" onAction="#showAbout" opacity="0.0" prefHeight="30.0" prefWidth="36.0" text="Button">
+      <Button layoutX="1064.0" layoutY="118.0" mnemonicParsing="false" onAction="#showAbout" opacity="0.0" prefHeight="30.0" prefWidth="36.0" text="Button">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <ImageView fitHeight="80.0" fitWidth="78.0" layoutX="1045.0" layoutY="47.0">
-         <image>
-            <Image url="@../../../../../Downloads/PICS/icon.png" />
-         </image>
-      </ImageView>
    </children>
 </AnchorPane>
