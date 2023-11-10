@@ -8,6 +8,7 @@ import java.util.ResourceBundle;
 import Home.HomeController;
 import Login_Signup.RegisterController;
 import Products.CartController;
+import Products.CustomizeController;
 import Settings.SettingsController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -286,7 +287,7 @@ public class ReceiptController implements Initializable {
         }
 
         if (HomeController.product9.getProductStatus()) {
-            product9.setText(HomeController.product9.getProductName());
+            product9.setText(CustomizeController.product9.getProductName());
             qty9.setText(Double.toString(HomeController.product9.getProductQuantity()));
             price9.setText(Double.toString(HomeController.product9.getProductPrice()));
             amount9.setText(Double
