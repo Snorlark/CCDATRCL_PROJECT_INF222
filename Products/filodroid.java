@@ -1,5 +1,7 @@
 package Products;
 
+import javafx.scene.control.SpinnerValueFactory;
+
 public class filodroid {
    
     private String productName;
@@ -7,8 +9,20 @@ public class filodroid {
     private String productImage;
     private boolean productStatus = false;
     private double qty;
+    private String productId;
 
+    // public filodroid(String productName, double productPrice, double qty) {
+    //     this.productName = productName;
+    //     this.productPrice = productPrice;
+    //     this.qty = qty;
+    // }
+    public void setProductId(String productId) {
+        this.productId = productId;
+    }
 
+    public String getProductId() {
+        return productId;
+    }
     public String getProductName() {
         return this.productName;
     }
@@ -45,8 +59,7 @@ public class filodroid {
         return this.qty;
     }
 
-    public void setProductQuantity(double quantity) {
-        this.qty = quantity;
+    public void addProductQuantity(double quantity) {
+        this.qty += 1;
     }
-
 }

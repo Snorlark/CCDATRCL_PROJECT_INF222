@@ -244,7 +244,7 @@ public class CartController implements Initializable {
         if (HomeController.product1.getProductStatus()) {
 
             double qty = Double.parseDouble(choiceBox1.getValue());
-            HomeController.product1.setProductQuantity(qty);
+            HomeController.product1.addProductQuantity(qty);
 
             item1Amount = HomeController.product1.getProductPrice() * qty;
 
@@ -256,7 +256,7 @@ public class CartController implements Initializable {
         if (HomeController.product2.getProductStatus()) {
 
             double qty = Double.parseDouble(choiceBox2.getValue());
-            HomeController.product2.setProductQuantity(qty);
+            HomeController.product2.addProductQuantity(qty);
 
             item2Amount = HomeController.product2.getProductPrice() * qty;
 
@@ -268,7 +268,7 @@ public class CartController implements Initializable {
         if (HomeController.product3.getProductStatus()) {
 
             double qty = Double.parseDouble(choiceBox3.getValue());
-            HomeController.product3.setProductQuantity(qty);
+            HomeController.product3.addProductQuantity(qty);
 
             item1Amount = HomeController.product3.getProductPrice() * qty;
 
@@ -281,7 +281,7 @@ public class CartController implements Initializable {
         if (HomeController.product4.getProductStatus()) {
 
             double qty = Double.parseDouble(choiceBox4.getValue());
-            HomeController.product4.setProductQuantity(qty);
+            HomeController.product4.addProductQuantity(qty);
 
             item4Amount = HomeController.product4.getProductPrice() * qty;
 
@@ -293,7 +293,7 @@ public class CartController implements Initializable {
         if (HomeController.product5.getProductStatus()) {
 
             double qty = Double.parseDouble(choiceBox5.getValue());
-            HomeController.product5.setProductQuantity(qty);
+            HomeController.product5.addProductQuantity(qty);
 
             item5Amount = HomeController.product5.getProductPrice() * qty;
 
@@ -305,7 +305,7 @@ public class CartController implements Initializable {
         if (HomeController.product6.getProductStatus()) {
 
             double qty = Double.parseDouble(choiceBox6.getValue());
-            HomeController.product6.setProductQuantity(qty);
+            HomeController.product6.addProductQuantity(qty);
 
             item6Amount = HomeController.product6.getProductPrice() * qty;
 
@@ -317,7 +317,7 @@ public class CartController implements Initializable {
         if (HomeController.product7.getProductStatus()) {
 
             double qty = Double.parseDouble(choiceBox7.getValue());
-            HomeController.product7.setProductQuantity(qty);
+            HomeController.product7.addProductQuantity(qty);
 
             item7Amount = HomeController.product7.getProductPrice() * qty;
 
@@ -329,7 +329,7 @@ public class CartController implements Initializable {
         if (HomeController.product8.getProductStatus()) {
 
             double qty = Double.parseDouble(choiceBox8.getValue());
-            HomeController.product8.setProductQuantity(qty);
+            HomeController.product8.addProductQuantity(qty);
 
             item8Amount = HomeController.product8.getProductPrice() * qty;
 
@@ -341,7 +341,7 @@ public class CartController implements Initializable {
         if (HomeController.product9.getProductStatus()) {
 
             double qty = Double.parseDouble(choiceBox9.getValue());
-            HomeController.product9.setProductQuantity(qty);
+            HomeController.product9.addProductQuantity(qty);
 
             item9Amount = HomeController.product9.getProductPrice() * qty;
 
@@ -465,7 +465,7 @@ public class CartController implements Initializable {
    public void showAbout(ActionEvent event) throws IOException { 
         AlertMaker.showAboutAlert("About us", 
         
-        "GROUP 5 - FILODROIDS \nAgustin, Sherlene \nAngeles, Jason \nBabao, Lark \nValdez, Angelique");
+        "DANNY DANNY - FILODROIDS \nAgustin, Sherlene \nAngeles, Jason \nBabao, Lark \nValdez, Angelique");
 
    }
 

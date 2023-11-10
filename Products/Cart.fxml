@@ -363,7 +363,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="1067.0" layoutY="117.0" mnemonicParsing="false" opacity="0.0" prefHeight="39.0" prefWidth="36.0" text="Button">
+      <Button layoutX="1067.0" layoutY="126.0" mnemonicParsing="false" onAction="#showInstruct" opacity="0.0" prefHeight="30.0" prefWidth="37.0" text="Button">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -373,7 +373,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="1066.0" layoutY="177.0" mnemonicParsing="false" opacity="0.0" prefHeight="30.0" prefWidth="36.0" text="Button">
+      <Button layoutX="1066.0" layoutY="177.0" mnemonicParsing="false" onAction="#showAbout" opacity="0.0" prefHeight="30.0" prefWidth="36.0" text="Button">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
