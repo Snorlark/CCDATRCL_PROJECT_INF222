@@ -60,4 +60,12 @@ public class AlertMaker {
         alert.showAndWait();
     }
 
+     public static void showClosingAlert(String title, String content) {
+        Alert alert = new Alert(AlertType.INFORMATION);
+        alert.setTitle("YOUR FILODROID IS OTW! :D");
+        alert.setHeaderText(title);
+        alert.setContentText(content);
+        alert.showAndWait();
+    }
+
 }
