@@ -124,7 +124,7 @@ public class View3Controller implements Initializable {
      // If addtocart button is pressed, set product status to true
         if (sourceButton.equals(p3)) {
             ProductController.product3.setProductStatus(true);
-            ProductController.product3.setProductQuantity(1);
+            ProductController.product3.addProductQuantity(1);
         }
 
     }

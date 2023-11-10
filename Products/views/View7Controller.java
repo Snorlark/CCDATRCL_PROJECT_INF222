@@ -122,7 +122,7 @@ public class View7Controller implements Initializable {
      // If addtocart button is pressed, set product status to true
         if (sourceButton.equals(p7)) {
             ProductController.product7.setProductStatus(true);
-            ProductController.product7.setProductQuantity(1);
+            ProductController.product7.addProductQuantity(1);
         }
 
     }

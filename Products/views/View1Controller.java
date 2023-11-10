@@ -124,8 +124,7 @@ public class View1Controller implements Initializable {
         // If addtocart button is pressed, set product status to true
         if (sourceButton.equals(p1)) {
             HomeController.product1.setProductStatus(true);
-            HomeController.product1.setProductQuantity(1);
-            HomeController.cart.addItem(HomeController.cartController.pane1);
+            HomeController.product1.addProductQuantity(1);
         }
 
         HomeController.cart.showItems();

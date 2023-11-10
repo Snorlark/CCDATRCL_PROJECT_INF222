@@ -125,7 +125,7 @@ public class View4Controller implements Initializable {
      // If addtocart button is pressed, set product status to true
         if (sourceButton.equals(p4)) {
             ProductController.product4.setProductStatus(true);
-            ProductController.product4.setProductQuantity(1);
+            ProductController.product4.addProductQuantity(1);
         }
 
     }

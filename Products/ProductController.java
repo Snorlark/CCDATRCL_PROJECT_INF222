@@ -110,10 +110,6 @@ public class ProductController implements Initializable {
 
     @FXML
     public ImageView outfit1Model, outfit2Model, outfit3Model, outfit4Model, outfit5Model, outfit6Model, outfit7Model, outfit8Model;
-    
-
-    // @FXML  FOR PRODUCT VIEWING
-    // private Button v1, v2, v3, v4, v5, v6, v7, v8, v9;
 
     @FXML
     private Button p1;
@@ -183,8 +179,6 @@ public class ProductController implements Initializable {
     public static p9 product9 = new p9();
     public static Cart cart = new Cart();
     
-    // static Cart cart = new Cart();
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
@@ -317,82 +311,130 @@ public class ProductController implements Initializable {
 
     public void buy(ActionEvent event) throws IOException {
 
-        
         Button sourceButton = (Button) event.getSource();
 
-        // If add to cart button is pressed, set product status to true
+     // If addtocart button is pressed, set product status to true
         if (sourceButton == p1) {
-            HomeController.product1.setProductStatus(true);
-            HomeController.product2.setProductQuantity(1);
-            ProductController.cart.addItem(ProductController.cartController.pane1);
-            AlertMaker.showSimpleAlert("Mabuhay!", "The item " + HomeController.product1.getProductName() + " has been added on your cart. :D");
-            
+            if (HomeController.product1.getProductQuantity() < 1) {
+                AlertMaker.showSimpleAlert("Mabuhay!", "FiloDroid " + HomeController.product1.getProductName() +" has been added on your cart. :D");
+                if (HomeController.product1.getProductStatus() == false) {
+                    ProductController.cart.addPaneItem(ProductController.cartController.pane1, product1); 
+                    HomeController.product1.setProductStatus(true);
+                }     
+                HomeController.product1.addProductQuantity(1);
+            } else {
+                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product1.getProductName() +" can only get cloned up to three, cannot buy more! :<");
+            }
         }
 
         else if (sourceButton == p2) {
-            HomeController.product2.setProductStatus(true);
-            HomeController.product2.setProductQuantity(1);
-            ProductController.cart.addItem(ProductController.cartController.pane2);
-            AlertMaker.showSimpleAlert("Mabuhay!", "The item " + HomeController.product2.getProductName() + " has been added on your cart. :D");
-          
+            if (HomeController.product2.getProductQuantity() < 1) {
+            AlertMaker.showSimpleAlert("Mabuhay!", "FiloDroid " + HomeController.product2.getProductName() +" has been added on your cart. :D");
+                if (HomeController.product2.getProductStatus() == false) {
+                    ProductController.cart.addPaneItem(ProductController.cartController.pane2, product2); 
+                    HomeController.product2.setProductStatus(true);
+                }   
+                HomeController.product2.addProductQuantity(1);
+            } else {
+                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product2.getProductName() +" can only get cloned up to three, cannot buy more! :<");
+            }
         }
 
         else if (sourceButton == p3) {
-            HomeController.product3.setProductStatus(true);
-            HomeController.product3.setProductQuantity(1);
-            ProductController.cart.addItem(ProductController.cartController.pane3);
-            AlertMaker.showSimpleAlert("Mabuhay!", "The item " + HomeController.product3.getProductName() + " has been added on your cart. :D");
-            
+            if (HomeController.product3.getProductQuantity() < 1) {
+                AlertMaker.showSimpleAlert("Mabuhay!", "FiloDroid " + HomeController.product3.getProductName() +" has been added on your cart. :D");
+                if (HomeController.product3.getProductStatus() == false) {
+                    ProductController.cart.addPaneItem(ProductController.cartController.pane3, product3); 
+                    HomeController.product3.setProductStatus(true);
+                }   
+                HomeController.product3.addProductQuantity(1);
+            } else {
+                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product3.getProductName() +" can only get cloned up to three, cannot buy more! :<");
+            }
         }
 
         else if (sourceButton == p4) {
-            HomeController.product4.setProductStatus(true);
-            HomeController.product4.setProductQuantity(1);
-            ProductController.cart.addItem(ProductController.cartController.pane4);
-            AlertMaker.showSimpleAlert("Mabuhay!", "The item " + HomeController.product4.getProductName() + " has been added on your cart. :D");
-
+            if (HomeController.product4.getProductQuantity() < 1) {
+                AlertMaker.showSimpleAlert("Mabuhay!", "FiloDroid " + HomeController.product4.getProductName() +" has been added on your cart. :D");
+                if (HomeController.product4.getProductStatus() == false) {
+                    ProductController.cart.addPaneItem(ProductController.cartController.pane4, product4); 
+                    HomeController.product4.setProductStatus(true);
+                }   
+                HomeController.product4.addProductQuantity(1);
+            } else {
+                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product4.getProductName() +" can only get cloned up to three, cannot buy more! :<");
+            }
         }
 
         else if (sourceButton == p5) {
-            HomeController.product5.setProductStatus(true);
-            HomeController.product5.setProductQuantity(1);
-            ProductController.cart.addItem(ProductController.cartController.pane5);
-            AlertMaker.showSimpleAlert("Mabuhay!", "The item " + HomeController.product5.getProductName() + " has been added on your cart. :D");
+            if (HomeController.product5.getProductQuantity() < 1) {
+                AlertMaker.showSimpleAlert("Mabuhay!", "FiloDroid " + HomeController.product5.getProductName() +" has been added on your cart. :D");
+                if (HomeController.product5.getProductStatus() == false) {
+                    ProductController.cart.addPaneItem(ProductController.cartController.pane5, product5); 
+                    HomeController.product5.setProductStatus(true);
+                }   
+                HomeController.product5.addProductQuantity(1);
+            } else {
+                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product5.getProductName() +" can only get cloned up to three, cannot buy more! :<");
+            }
         }
 
         else if (sourceButton == p6) {
-            HomeController.product6.setProductStatus(true);
-            HomeController.product6.setProductQuantity(1);
-            ProductController.cart.addItem(ProductController.cartController.pane6);
-            AlertMaker.showSimpleAlert("Mabuhay!", "The item " + HomeController.product6.getProductName() + " has been added on your cart. :D");
+            if (HomeController.product6.getProductQuantity() < 1) {
+                AlertMaker.showSimpleAlert("Mabuhay!", "FiloDroid " + HomeController.product6.getProductName() +" has been added on your cart. :D");
+                if (HomeController.product6.getProductStatus() == false) {
+                    ProductController.cart.addPaneItem(ProductController.cartController.pane6, product6); 
+                    HomeController.product6.setProductStatus(true);
+                }   
+                HomeController.product6.addProductQuantity(1);
+            } else {
+                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product6.getProductName() +" can only get cloned up to three, cannot buy more! :<");
+            }
         }
 
         else if (sourceButton == p7) {
-            HomeController.product7.setProductStatus(true);
-            HomeController.product7.setProductQuantity(1);
-            ProductController.cart.addItem(ProductController.cartController.pane7);
-            AlertMaker.showSimpleAlert("Mabuhay!", "The item " + HomeController.product7.getProductName() + " has been added on your cart. :D");
+            if (HomeController.product7.getProductQuantity() < 1) {
+                AlertMaker.showSimpleAlert("Mabuhay!", "FiloDroid " + HomeController.product7.getProductName() +" has been added on your cart. :D");
+                if (HomeController.product7.getProductStatus() == false) {
+                    ProductController.cart.addPaneItem(ProductController.cartController.pane7, product7); 
+                    HomeController.product7.setProductStatus(true);
+                }   
+                HomeController.product7.addProductQuantity(1);
+            } else {
+                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product7.getProductName() +  "can only get cloned up to three, cannot buy more! :<");
+            }
         }
 
         else if (sourceButton == p8) {
-            HomeController.product8.setProductStatus(true);
-            HomeController.product8.setProductQuantity(1);
-            ProductController.cart.addItem(ProductController.cartController.pane8);
-            AlertMaker.showSimpleAlert("Mabuhay!", "The item " + HomeController.product8.getProductName() + " has been added on your cart. :D");
+            if (HomeController.product8.getProductQuantity() < 1) {
+                AlertMaker.showSimpleAlert("Mabuhay!", "FiloDroid " + HomeController.product8.getProductName() +" has been added on your cart. :D");
+                if (HomeController.product8.getProductStatus() == false) {
+                    ProductController.cart.addPaneItem(ProductController.cartController.pane8, product8); 
+                    HomeController.product8.setProductStatus(true);
+                }   
+                HomeController.product8.addProductQuantity(1);
+            } else {
+                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product8.getProductName() +" can only get cloned up to three, cannot buy more! :<");
+            }
         }
 
         else if (sourceButton == p9) {
-            if(CustomizeController.filodroidCustomCheck == false) {
-                AlertMaker.showErrorAlert("Check Out", "You cannot check out this product, you have to customize first.");  
-            }
-            else if(CustomizeController.filodroidCustomCheck == true) {
-                AlertMaker.showSimpleAlert("Mabuhay!", "The item " + CustomizeController.product9.getProductName() + " has been added on your cart. :D");
-                HomeController.product9.setProductStatus(true);
-                HomeController.product9.setProductQuantity(1);
-                ProductController.cart.addItem(ProductController.cartController.pane9);
+            if (HomeController.product9.getProductQuantity() < 1) {
+                if(CustomizeController.filodroidCustomCheck == false) {
+                    AlertMaker.showErrorAlert("Check Out", "You cannot check out this product, you have to customize first.");  
+                } else {
+                    AlertMaker.showSimpleAlert("Mabuhay!", "FiloDroid " + CustomizeController.product9.getProductName() +" has been added on your cart. :D");
+                    if (HomeController.product9.getProductStatus() == false) {
+                        ProductController.cart.addPaneItem(ProductController.cartController.pane9, product9); 
+                        HomeController.product9.setProductStatus(true);
+                    }
+                    HomeController.product9.addProductQuantity(1);
+                }  
+            } else {
+                AlertMaker.showSimpleAlert("Mabuhay!", CustomizeController.product9.getProductName() +" can only get cloned up to three, cannot buy more! :<");
             }
         }
-
+        
         ProductController.cart.showItems();
     }
 
@@ -552,7 +594,7 @@ public class ProductController implements Initializable {
    
     public void showAbout(ActionEvent event) throws IOException { 
         AlertMaker.showAboutAlert("About us",
-        "GROUP 5 - FILODROIDS \nAgustin, Sherlene \nAngeles, Jason \nBabao, Lark \nValdez, Angelique");
+        "DANNY DANNY - FILODROIDS \nAgustin, Sherlene \nAngeles, Jason \nBabao, Lark \nValdez, Angelique");
    
     }
     

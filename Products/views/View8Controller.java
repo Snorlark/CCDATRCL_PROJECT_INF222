@@ -125,7 +125,7 @@ public class View8Controller implements Initializable {
      // If addtocart button is pressed, set product status to true
         if (sourceButton.equals(p8)) {
             ProductController.product8.setProductStatus(true);
-            ProductController.product8.setProductQuantity(1);
+            ProductController.product8.addProductQuantity(1);
         }
 
     }

@@ -124,7 +124,7 @@ public class View2Controller implements Initializable {
      // If addtocart button is pressed, set product status to true
         if (sourceButton.equals(p2)) {
             ProductController.product2.setProductStatus(true);
-            ProductController.product2.setProductQuantity(1);
+            ProductController.product2.addProductQuantity(1);
         }
 
     }

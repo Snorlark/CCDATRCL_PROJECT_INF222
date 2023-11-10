@@ -16,8 +16,8 @@
       </ImageView>
       <Button layoutX="47.0" layoutY="68.0" mnemonicParsing="false" opacity="0.0" prefHeight="34.0" prefWidth="33.0" text="Button" />
       <Button layoutX="1068.0" layoutY="71.0" mnemonicParsing="false" opacity="0.0" prefHeight="34.0" prefWidth="33.0" text="Button" />
-      <Button layoutX="1068.0" layoutY="125.0" mnemonicParsing="false" opacity="0.0" prefHeight="34.0" prefWidth="34.0" text="Button" />
-      <Button layoutX="1068.0" layoutY="548.0" mnemonicParsing="false" opacity="0.0" prefHeight="34.0" prefWidth="34.0" text="Button" />
+      <Button layoutX="1068.0" layoutY="125.0" mnemonicParsing="false" onAction="#showInstruct" opacity="0.0" prefHeight="34.0" prefWidth="34.0" text="Button" />
+      <Button layoutX="1068.0" layoutY="548.0" mnemonicParsing="false" onAction="#showAbout" opacity="0.0" prefHeight="34.0" prefWidth="34.0" text="Button" />
       <Button layoutX="824.0" layoutY="521.0" mnemonicParsing="false" opacity="0.0" prefHeight="54.0" prefWidth="197.0" text="Button" />
       <ImageView fitHeight="352.0" fitWidth="198.0" layoutX="387.0" layoutY="204.0">
          <image>

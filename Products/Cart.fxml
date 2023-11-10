@@ -358,11 +358,6 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="1067.0" layoutY="67.0" mnemonicParsing="false" onAction="#gotoUserprofile" opacity="0.0" prefHeight="39.0" prefWidth="36.0" text="Button">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
       <Button layoutX="1067.0" layoutY="126.0" mnemonicParsing="false" onAction="#showInstruct" opacity="0.0" prefHeight="30.0" prefWidth="37.0" text="Button">
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -378,5 +373,10 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
+      <ImageView fitHeight="80.0" fitWidth="78.0" layoutX="1045.0" layoutY="47.0">
+         <image>
+            <Image url="@../../../../../Downloads/PICS/icon.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

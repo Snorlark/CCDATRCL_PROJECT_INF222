@@ -124,7 +124,7 @@ public class View6Controller implements Initializable {
      // If addtocart button is pressed, set product status to true
         if (sourceButton.equals(p6)) {
             ProductController.product6.setProductStatus(true);
-            ProductController.product6.setProductQuantity(1);
+            ProductController.product6.addProductQuantity(1);
         }
 
     }

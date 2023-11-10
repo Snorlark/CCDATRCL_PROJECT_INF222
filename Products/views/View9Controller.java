@@ -124,8 +124,10 @@ public class View9Controller implements Initializable {
      // If addtocart button is pressed, set product status to true
         if (sourceButton.equals(p9)) {
             ProductController.product9.setProductStatus(true);
-            ProductController.product9.setProductQuantity(1);
+            ProductController.product9.addProductQuantity(1);
         }
+
+        
 
     }
     
