@@ -323,7 +323,7 @@ public class ProductController implements Initializable {
                 }     
                 HomeController.product1.addProductQuantity(1);
             } else {
-                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product1.getProductName() +" can only get cloned up to three, cannot buy more! :<");
+                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product1.getProductName() + " is already added to cart! Please adjust the quantity at the cart :<");
             }
         }
 
@@ -336,7 +336,7 @@ public class ProductController implements Initializable {
                 }   
                 HomeController.product2.addProductQuantity(1);
             } else {
-                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product2.getProductName() +" can only get cloned up to three, cannot buy more! :<");
+                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product2.getProductName() + " is already added to cart! Please adjust the quantity at the cart :<");
             }
         }
 
@@ -349,7 +349,7 @@ public class ProductController implements Initializable {
                 }   
                 HomeController.product3.addProductQuantity(1);
             } else {
-                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product3.getProductName() +" can only get cloned up to three, cannot buy more! :<");
+                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product3.getProductName() + " is already added to cart! Please adjust the quantity at the cart :<");
             }
         }
 
@@ -362,7 +362,7 @@ public class ProductController implements Initializable {
                 }   
                 HomeController.product4.addProductQuantity(1);
             } else {
-                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product4.getProductName() +" can only get cloned up to three, cannot buy more! :<");
+                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product4.getProductName() + " is already added to cart! Please adjust the quantity at the cart :<");
             }
         }
 
@@ -375,7 +375,7 @@ public class ProductController implements Initializable {
                 }   
                 HomeController.product5.addProductQuantity(1);
             } else {
-                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product5.getProductName() +" can only get cloned up to three, cannot buy more! :<");
+                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product5.getProductName() + " is already added to cart! Please adjust the quantity at the cart :<");
             }
         }
 
@@ -388,7 +388,7 @@ public class ProductController implements Initializable {
                 }   
                 HomeController.product6.addProductQuantity(1);
             } else {
-                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product6.getProductName() +" can only get cloned up to three, cannot buy more! :<");
+                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product6.getProductName() + " is already added to cart! Please adjust the quantity at the cart :<");
             }
         }
 
@@ -401,7 +401,7 @@ public class ProductController implements Initializable {
                 }   
                 HomeController.product7.addProductQuantity(1);
             } else {
-                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product7.getProductName() +  "can only get cloned up to three, cannot buy more! :<");
+                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product7.getProductName() + " is already added to cart! Please adjust the quantity at the cart :<");
             }
         }
 
@@ -414,7 +414,7 @@ public class ProductController implements Initializable {
                 }   
                 HomeController.product8.addProductQuantity(1);
             } else {
-                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product8.getProductName() +" can only get cloned up to three, cannot buy more! :<");
+                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product8.getProductName() + " is already added to cart! Please adjust the quantity at the cart :<");
             }
         }
 
@@ -431,7 +431,7 @@ public class ProductController implements Initializable {
                     HomeController.product9.addProductQuantity(1);
                 }  
             } else {
-                AlertMaker.showSimpleAlert("Mabuhay!", CustomizeController.product9.getProductName() +" can only get cloned up to three, cannot buy more! :<");
+                AlertMaker.showSimpleAlert("Mabuhay!", CustomizeController.product9.getProductName() + " is already added to cart! Please adjust the quantity at the cart :<");
             }
         }
         

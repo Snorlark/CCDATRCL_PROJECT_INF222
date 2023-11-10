@@ -270,7 +270,7 @@ public class CartController implements Initializable {
             double qty = Double.parseDouble(choiceBox3.getValue());
             HomeController.product3.addProductQuantity(qty);
 
-            item1Amount = HomeController.product3.getProductPrice() * qty;
+            item3Amount = HomeController.product3.getProductPrice() * qty;
 
             if (source == choiceBox1) {
                 item3Amount = HomeController.product3.getProductPrice() * qty;
@@ -368,7 +368,7 @@ public class CartController implements Initializable {
         }
 
         if (HomeController.product2.getProductStatus()) {
-            totalAmount += HomeController.product3.getProductPrice();
+            totalAmount += HomeController.product2.getProductPrice();
         }
 
         if (HomeController.product3.getProductStatus()) {
