@@ -5,6 +5,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
+import Alert.AlertMaker;
 import Home.HomeController;
 import Login_Signup.RegisterController;
 import Products.CartController;
@@ -310,15 +311,13 @@ public class ReceiptController implements Initializable {
 
 
     }
+
     public void goBack(ActionEvent event) throws IOException {
+
+        AlertMaker.showClosingAlert("THANK YOU FOR SHOPPING WITH US! <3", "Your FILODROID will be shipped out after 3 days. Kindly wait for a text message for the transaction code. We hope to see you again!");
      
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Home/Home.fxml"));
-        Parent root = loader.load();
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.centerOnScreen();
-        stage.show();
+        stage.close();
 
     }
 
