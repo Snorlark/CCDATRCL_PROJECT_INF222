@@ -2,7 +2,7 @@
 
 Members:
 
-\n Agustin, Sherlene
+Agustin, Sherlene
 Angeles, Jason
 Babao, Lark Sigmuond
 Valdez, Angelique Anne
