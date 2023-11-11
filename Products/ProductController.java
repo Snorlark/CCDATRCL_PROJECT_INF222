@@ -24,7 +24,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
@@ -88,28 +87,10 @@ public class ProductController implements Initializable {
     private Label price9;
     
     @FXML
-    public ImageView img1, img2, img3, img4, img5, img6, img7, img8, img9;
+    ImageView img1, img2, img3, img4, img5, img6, img7, img8, img9;
 
-    @FXML
-    public ImageView backAModel, backBModel;
-
-    @FXML
-    public ImageView skin1Model, skin2Model, skin3Model, skin4Model;
-
-    @FXML
-    public ImageView eyebrows1Model, eyebrows2Model, eyebrows3Model, eyebrows4Model, eyebrows5Model, eyebrows6Model, eyebrows7Model, eyebrows8Model;
-
-    @FXML
-    public ImageView hair1Model, hair2Model, hair3Model, hair4Model;
-
-    @FXML
-    public ImageView eyes1Model, eyes2Model, eyes3Model, eyes4Model, eyes5Model, eyes6Model, eyes7Model, eyes8Model;
-
-    @FXML
-    public ImageView mouth1Model, mouth2Model, mouth3Model, mouth4Model, mouth5Model, mouth6Model;
-
-    @FXML
-    public ImageView outfit1Model, outfit2Model, outfit3Model, outfit4Model, outfit5Model, outfit6Model, outfit7Model, outfit8Model;
+    // @FXML  FOR PRODUCT VIEWING
+    // private Button v1, v2, v3, v4, v5, v6, v7, v8, v9;
 
     @FXML
     private Button p1;
@@ -160,10 +141,6 @@ public class ProductController implements Initializable {
     ReceiptController receiptController = null;
 
 
-    @FXML
-    private ListView<String> cartListView;
-
-
     FXMLLoader loader;
 
     public static int count = 0;
@@ -178,7 +155,7 @@ public class ProductController implements Initializable {
     public static p8 product8 = new p8();
     public static p9 product9 = new p9();
     public static Cart cart = new Cart();
-    
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
@@ -188,56 +165,45 @@ public class ProductController implements Initializable {
         Image image1 = new Image(HomeController.product1.getProductImage());
         img1.setImage(image1);
 
-        // ============== ITEM 2 ==================//
         item2.setText(HomeController.product2.getProductName());
         price2.setText("₱ " + Double.toString(HomeController.product2.getProductPrice()));
         Image image2 = new Image(HomeController.product2.getProductImage());
         img2.setImage(image2);           
 
-        // ============== ITEM 3 ==================//
         item3.setText(HomeController.product3.getProductName());
         price3.setText("₱ " + Double.toString(HomeController.product3.getProductPrice()));
         Image image3 = new Image(HomeController.product3.getProductImage());
         img3.setImage(image3);
 
-        // ============== ITEM 4 ==================//
         item4.setText(HomeController.product4.getProductName());
         price4.setText("₱ " + Double.toString(HomeController.product4.getProductPrice()));
         Image image4 = new Image(HomeController.product4.getProductImage());
         img4.setImage(image4);
 
-        // ============== ITEM 5 ==================//
         item5.setText(HomeController.product5.getProductName());
         price5.setText("₱ " + Double.toString(HomeController.product5.getProductPrice()));
         Image image5 = new Image(HomeController.product5.getProductImage());
         img5.setImage(image5);
 
-        // ============== ITEM 6 ==================//
         item6.setText(HomeController.product6.getProductName());
-        price6.setText("₱ " + Double.toString(HomeController.product6.getProductPrice()));
+        price6.setText( Double.toString(HomeController.product6.getProductPrice()));
         Image image6 = new Image(HomeController.product6.getProductImage());
         img6.setImage(image6);
 
-        // ============== ITEM 7 ==================//
         item7.setText(HomeController.product7.getProductName());
         price7.setText("₱ " + Double.toString(HomeController.product7.getProductPrice()));
         Image image7 = new Image(HomeController.product7.getProductImage());
         img7.setImage(image7);
 
-        // ============== ITEM 8 ==================//
         item8.setText(HomeController.product8.getProductName());
-        price8.setText("₱ " + Double.toString(HomeController.product8.getProductPrice()));
+        price8.setText(Double.toString(HomeController.product8.getProductPrice()));
         Image image8 = new Image(HomeController.product8.getProductImage());
         img8.setImage(image8);
 
-        // ============== ITEM 9 ==================//
-        if(CustomizeController.product9.getProductName() == null) item9.setText("Custom ()");
-        else{
-            item9.setText("Custom (" + CustomizeController.product9.getProductName() + ")");
-        } 
+        item9.setText(HomeController.product9.getProductName());
         price9.setText("₱ " + Double.toString(HomeController.product9.getProductPrice()));
         Image image9 = new Image(HomeController.product9.getProductImage());
-        skin1Model.setImage(image9);
+        img9.setImage(image9);
 
         try {
             loader = new FXMLLoader(getClass().getResource("/Products/Cart.fxml"));
@@ -246,67 +212,13 @@ public class ProductController implements Initializable {
         } catch (Exception e) {
             // TODO: handle exception
             e.printStackTrace();
- 
+
         }
 
         // Clears all items in Checkout.fxml
         cartController = loader.getController();
         cartController.myVBox.getChildren().removeAll(ProductController.cartController.myVBox.getChildren());
         
-        displayModel();
-    }
-
-
-    public void displayModel(){
-
-        int visibleVal = 399;
-        
-        if (CustomizeController.backACheck) backAModel.setLayoutY(visibleVal);
-        else if (CustomizeController.backBCheck) backBModel.setLayoutY(visibleVal);
-
-        if (CustomizeController.skin1Check) skin1Model.setLayoutY(visibleVal);
-        else if (CustomizeController.skin2Check) skin2Model.setLayoutY(visibleVal);
-        else if (CustomizeController.skin3Check) skin3Model.setLayoutY(visibleVal);
-        else if (CustomizeController.skin4Check) skin4Model.setLayoutY(visibleVal);
-
-        if (CustomizeController.eyebrows1Check) eyebrows1Model.setLayoutY(visibleVal);
-        else if (CustomizeController.eyebrows2Check) eyebrows2Model.setLayoutY(visibleVal);
-        else if (CustomizeController.eyebrows3Check) eyebrows3Model.setLayoutY(visibleVal);
-        else if (CustomizeController.eyebrows4Check) eyebrows4Model.setLayoutY(visibleVal);
-        else if (CustomizeController.eyebrows5Check) eyebrows5Model.setLayoutY(visibleVal);
-        else if (CustomizeController.eyebrows6Check) eyebrows6Model.setLayoutY(visibleVal);
-        else if (CustomizeController.eyebrows7Check) eyebrows7Model.setLayoutY(visibleVal);
-        else if (CustomizeController.eyebrows8Check) eyebrows8Model.setLayoutY(visibleVal);
-
-        if (CustomizeController.hair1Check) hair1Model.setLayoutY(visibleVal);
-        else if (CustomizeController.hair2Check) hair2Model.setLayoutY(visibleVal);
-        else if (CustomizeController.hair3Check) hair3Model.setLayoutY(visibleVal);
-        else if (CustomizeController.hair4Check) hair4Model.setLayoutY(visibleVal);
-
-        if (CustomizeController.eyes1Check) eyes1Model.setLayoutY(visibleVal);
-        else if (CustomizeController.eyes2Check) eyes2Model.setLayoutY(visibleVal);
-        else if (CustomizeController.eyes3Check) eyes3Model.setLayoutY(visibleVal);
-        else if (CustomizeController.eyes4Check) eyes4Model.setLayoutY(visibleVal);
-        else if (CustomizeController.eyes5Check) eyes5Model.setLayoutY(visibleVal);
-        else if (CustomizeController.eyes6Check) eyes6Model.setLayoutY(visibleVal);
-        else if (CustomizeController.eyes7Check) eyes7Model.setLayoutY(visibleVal);
-        else if (CustomizeController.eyes8Check) eyes8Model.setLayoutY(visibleVal);
-        
-        if (CustomizeController.mouth1Check) mouth1Model.setLayoutY(visibleVal);
-        else if (CustomizeController.mouth2Check) mouth2Model.setLayoutY(visibleVal);
-        else if (CustomizeController.mouth3Check) mouth3Model.setLayoutY(visibleVal);
-        else if (CustomizeController.mouth4Check) mouth4Model.setLayoutY(visibleVal);
-        else if (CustomizeController.mouth5Check) mouth5Model.setLayoutY(visibleVal);
-        else if (CustomizeController.mouth6Check) mouth6Model.setLayoutY(visibleVal);
-
-        if (CustomizeController.outfit1Check) outfit1Model.setLayoutY(visibleVal);
-        else if (CustomizeController.outfit2Check) outfit2Model.setLayoutY(visibleVal);
-        else if (CustomizeController.outfit3Check) outfit3Model.setLayoutY(visibleVal);
-        else if (CustomizeController.outfit4Check) outfit4Model.setLayoutY(visibleVal);
-        else if (CustomizeController.outfit5Check) outfit5Model.setLayoutY(visibleVal);
-        else if (CustomizeController.outfit6Check) outfit6Model.setLayoutY(visibleVal);
-        else if (CustomizeController.outfit7Check) outfit7Model.setLayoutY(visibleVal);
-        else if (CustomizeController.outfit8Check) outfit8Model.setLayoutY(visibleVal);
     }
 
     public void buy(ActionEvent event) throws IOException {
@@ -315,7 +227,7 @@ public class ProductController implements Initializable {
 
      // If addtocart button is pressed, set product status to true
         if (sourceButton == p1) {
-            if (HomeController.product1.getProductQuantity() < 1) {
+            if (HomeController.product1.getProductQuantity() < 3) {
                 AlertMaker.showSimpleAlert("Mabuhay!", "FiloDroid " + HomeController.product1.getProductName() +" has been added on your cart. :D");
                 if (HomeController.product1.getProductStatus() == false) {
                     ProductController.cart.addPaneItem(ProductController.cartController.pane1, product1); 
@@ -323,12 +235,12 @@ public class ProductController implements Initializable {
                 }     
                 HomeController.product1.addProductQuantity(1);
             } else {
-                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product1.getProductName() + " is already added to cart! Please adjust the quantity at the cart :<");
+                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product1.getProductName() +" can only get cloned up to three, cannot buy more! :<");
             }
         }
 
         else if (sourceButton == p2) {
-            if (HomeController.product2.getProductQuantity() < 1) {
+            if (HomeController.product2.getProductQuantity() < 3) {
             AlertMaker.showSimpleAlert("Mabuhay!", "FiloDroid " + HomeController.product2.getProductName() +" has been added on your cart. :D");
                 if (HomeController.product2.getProductStatus() == false) {
                     ProductController.cart.addPaneItem(ProductController.cartController.pane2, product2); 
@@ -336,12 +248,12 @@ public class ProductController implements Initializable {
                 }   
                 HomeController.product2.addProductQuantity(1);
             } else {
-                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product2.getProductName() + " is already added to cart! Please adjust the quantity at the cart :<");
+                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product2.getProductName() +" can only get cloned up to three, cannot buy more! :<");
             }
         }
 
         else if (sourceButton == p3) {
-            if (HomeController.product3.getProductQuantity() < 1) {
+            if (HomeController.product3.getProductQuantity() < 3) {
                 AlertMaker.showSimpleAlert("Mabuhay!", "FiloDroid " + HomeController.product3.getProductName() +" has been added on your cart. :D");
                 if (HomeController.product3.getProductStatus() == false) {
                     ProductController.cart.addPaneItem(ProductController.cartController.pane3, product3); 
@@ -349,12 +261,12 @@ public class ProductController implements Initializable {
                 }   
                 HomeController.product3.addProductQuantity(1);
             } else {
-                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product3.getProductName() + " is already added to cart! Please adjust the quantity at the cart :<");
+                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product3.getProductName() +" can only get cloned up to three, cannot buy more! :<");
             }
         }
 
         else if (sourceButton == p4) {
-            if (HomeController.product4.getProductQuantity() < 1) {
+            if (HomeController.product4.getProductQuantity() < 3) {
                 AlertMaker.showSimpleAlert("Mabuhay!", "FiloDroid " + HomeController.product4.getProductName() +" has been added on your cart. :D");
                 if (HomeController.product4.getProductStatus() == false) {
                     ProductController.cart.addPaneItem(ProductController.cartController.pane4, product4); 
@@ -362,12 +274,12 @@ public class ProductController implements Initializable {
                 }   
                 HomeController.product4.addProductQuantity(1);
             } else {
-                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product4.getProductName() + " is already added to cart! Please adjust the quantity at the cart :<");
+                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product4.getProductName() +" can only get cloned up to three, cannot buy more! :<");
             }
         }
 
         else if (sourceButton == p5) {
-            if (HomeController.product5.getProductQuantity() < 1) {
+            if (HomeController.product5.getProductQuantity() < 3) {
                 AlertMaker.showSimpleAlert("Mabuhay!", "FiloDroid " + HomeController.product5.getProductName() +" has been added on your cart. :D");
                 if (HomeController.product5.getProductStatus() == false) {
                     ProductController.cart.addPaneItem(ProductController.cartController.pane5, product5); 
@@ -375,12 +287,12 @@ public class ProductController implements Initializable {
                 }   
                 HomeController.product5.addProductQuantity(1);
             } else {
-                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product5.getProductName() + " is already added to cart! Please adjust the quantity at the cart :<");
+                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product5.getProductName() +" can only get cloned up to three, cannot buy more! :<");
             }
         }
 
         else if (sourceButton == p6) {
-            if (HomeController.product6.getProductQuantity() < 1) {
+            if (HomeController.product6.getProductQuantity() < 3) {
                 AlertMaker.showSimpleAlert("Mabuhay!", "FiloDroid " + HomeController.product6.getProductName() +" has been added on your cart. :D");
                 if (HomeController.product6.getProductStatus() == false) {
                     ProductController.cart.addPaneItem(ProductController.cartController.pane6, product6); 
@@ -388,12 +300,12 @@ public class ProductController implements Initializable {
                 }   
                 HomeController.product6.addProductQuantity(1);
             } else {
-                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product6.getProductName() + " is already added to cart! Please adjust the quantity at the cart :<");
+                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product6.getProductName() +" can only get cloned up to three, cannot buy more! :<");
             }
         }
 
         else if (sourceButton == p7) {
-            if (HomeController.product7.getProductQuantity() < 1) {
+            if (HomeController.product7.getProductQuantity() < 3) {
                 AlertMaker.showSimpleAlert("Mabuhay!", "FiloDroid " + HomeController.product7.getProductName() +" has been added on your cart. :D");
                 if (HomeController.product7.getProductStatus() == false) {
                     ProductController.cart.addPaneItem(ProductController.cartController.pane7, product7); 
@@ -401,12 +313,12 @@ public class ProductController implements Initializable {
                 }   
                 HomeController.product7.addProductQuantity(1);
             } else {
-                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product7.getProductName() + " is already added to cart! Please adjust the quantity at the cart :<");
+                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product7.getProductName() +  "can only get cloned up to three, cannot buy more! :<");
             }
         }
 
         else if (sourceButton == p8) {
-            if (HomeController.product8.getProductQuantity() < 1) {
+            if (HomeController.product8.getProductQuantity() < 3) {
                 AlertMaker.showSimpleAlert("Mabuhay!", "FiloDroid " + HomeController.product8.getProductName() +" has been added on your cart. :D");
                 if (HomeController.product8.getProductStatus() == false) {
                     ProductController.cart.addPaneItem(ProductController.cartController.pane8, product8); 
@@ -414,28 +326,25 @@ public class ProductController implements Initializable {
                 }   
                 HomeController.product8.addProductQuantity(1);
             } else {
-                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product8.getProductName() + " is already added to cart! Please adjust the quantity at the cart :<");
+                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product8.getProductName() +" can only get cloned up to three, cannot buy more! :<");
             }
         }
 
         else if (sourceButton == p9) {
-            if (HomeController.product9.getProductQuantity() < 1) {
-                if(CustomizeController.filodroidCustomCheck == false) {
-                    AlertMaker.showErrorAlert("Check Out", "You cannot check out this product, you have to customize first.");  
-                } else {
-                    AlertMaker.showSimpleAlert("Mabuhay!", "FiloDroid " + CustomizeController.product9.getProductName() +" has been added on your cart. :D");
-                    if (HomeController.product9.getProductStatus() == false) {
-                        ProductController.cart.addPaneItem(ProductController.cartController.pane9, product9); 
-                        HomeController.product9.setProductStatus(true);
-                    }
-                    HomeController.product9.addProductQuantity(1);
+            if (HomeController.product9.getProductQuantity() < 3) {
+                AlertMaker.showSimpleAlert("Mabuhay!", "FiloDroid " + HomeController.product9.getProductName() +" has been added on your cart. :D");
+                if (HomeController.product9.getProductStatus() == false) {
+                    ProductController.cart.addPaneItem(ProductController.cartController.pane9, product9);
+                    HomeController.product9.setProductStatus(true);
                 }  
+                HomeController.product9.addProductQuantity(1);
             } else {
-                AlertMaker.showSimpleAlert("Mabuhay!", CustomizeController.product9.getProductName() + " is already added to cart! Please adjust the quantity at the cart :<");
+                AlertMaker.showSimpleAlert("Mabuhay!", HomeController.product9.getProductName() +" can only get cloned up to three, cannot buy more! :<");
             }
         }
-        
+
         ProductController.cart.showItems();
+  
     }
 
     // Goes to Userprofile.fxml
@@ -463,7 +372,8 @@ public class ProductController implements Initializable {
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
-     
+
+        
     }
 
     // Goes to Home.fxml
@@ -490,19 +400,6 @@ public class ProductController implements Initializable {
         stage.setScene(scene);
         stage.show();
 
-    }
-
-    public void gotoCustomize(ActionEvent event) throws IOException {
-
-        CartController.cartGoBackCount = 2;
-        CustomizeController.customizeGoBackCount = 2;
-
-        Parent root = FXMLLoader.load(getClass().getResource("Customize.fxml"));
-        Scene scene = new Scene(root);
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setScene(scene);
-        stage.show();
-        
     }
 
     public void view (ActionEvent event) throws IOException {
@@ -584,18 +481,26 @@ public class ProductController implements Initializable {
 
         }
 
+        else if (viewButton== v9) {
+            Parent root = FXMLLoader.load(getClass().getResource("/Products/views/View9.fxml"));
+            Scene scene = new Scene(root);
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+
+        }
+
     }  
-    
-    
-    public void showInstruct(ActionEvent event) throws IOException { 
-        AlertMaker.showInstructionsAlert("MABUHAY! :D", "Filodroids Company is a local Filipino company that manufactures and sells hobby products such as \nfigures. We handle everything from designing and making the products to marketing and distributing \nthem. Our unique creations are inspired by different generations of Filipino themes and culture.");
-        
-    }
+
+     public void showInstruct(ActionEvent event) throws IOException { 
+            AlertMaker.showInstructionsAlert("MABUHAY! :D", "Filodroids Company is a local Filipino company that manufactures and sells hobby products such as \nfigures. We handle everything from designing and making the products to marketing and distributing \nthem. Our unique creations are inspired by different generations of Filipino themes and culture.");
    
-    public void showAbout(ActionEvent event) throws IOException { 
-        AlertMaker.showAboutAlert("About us",
-        "DANNY DANNY - FILODROIDS \nAgustin, Sherlene \nAngeles, Jason \nBabao, Lark \nValdez, Angelique");
+       }
    
-    }
+       public void showAbout(ActionEvent event) throws IOException { 
+            AlertMaker.showAboutAlert("About us",
+            "DANNY DANNY - FILODROIDS \nAgustin, Sherlene \nAngeles, Jason \nBabao, Lark \nValdez, Angelique");
+   
+       }
     
 }
